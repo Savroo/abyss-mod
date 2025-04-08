@@ -2,6 +2,7 @@ package net.savro.abyss;
 
 import net.fabricmc.api.ModInitializer;
 import net.savro.abyss.item.ModItems;
+import net.savro.abyss.item.ModItemGroups;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,5 +23,6 @@ public class Abyss implements ModInitializer {
 
 		LOGGER.info("If you can see this then im not entirely incompetent at coding");
 		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 	}
 }
