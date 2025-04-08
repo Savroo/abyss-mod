@@ -2,6 +2,7 @@ package net.savro.abyss.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.savro.abyss.Abyss;
+import net.savro.abyss.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,7 @@ public class ModItemGroups {
         .displayName(Text.translatable("itemGroup.abyss.test_group"))
         .entries((displayContext, entries) -> {
             entries.add(ModItems.Gorple);
+            entries.add(ModBlocks.GORPLE_BLOCK);
         }).build());
     
 
