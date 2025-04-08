@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "abyss",
 	"version": "${version}",
-	"name": "abyss",
+	"name": "Abyss",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -18,12 +18,19 @@
 		"main": [
 			"net.savro.abyss.Abyss"
 		],
+		"client": [
+			"net.savro.abyss.AbyssClient"
+		],
 		"fabric-datagen": [
 			"net.savro.abyss.AbyssDataGenerator"
 		]
 	},
 	"mixins": [
-		"abyss.mixins.json"
+		"abyss.mixins.json",
+		{
+			"config": "abyss.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.13",
