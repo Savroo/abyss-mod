@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+        "tag": "abyss:gorple"
+        }
+    },
+    "result": {
+        "item": "abyss:gorple_block",
+        "count": 1
+    }
+}

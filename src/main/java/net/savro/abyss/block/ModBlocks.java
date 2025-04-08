@@ -19,6 +19,8 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.WOOL)
             ));
 
+        
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Abyss.MOD_ID, name), block);
