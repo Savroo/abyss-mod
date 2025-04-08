@@ -1,8 +1,6 @@
 package net.savro.abyss.item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.savro.abyss.Abyss;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,9 +16,5 @@ public class ModItems {
     public static void registerModItems() {
         // Register your items here
         Abyss.LOGGER.info("Registering Mod Items for " + Abyss.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(Gorple);
-        });
     }
 }
