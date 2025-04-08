@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "abyss",
-	"version": "${version}",
+	"version": "0.0.69",
 	"name": "Abyss",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Literally does nothing (for now)",
 	"authors": [
-		"Me!"
+		"Savroo"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -26,11 +26,7 @@
 		]
 	},
 	"mixins": [
-		"abyss.mixins.json",
-		{
-			"config": "abyss.client.mixins.json",
-			"environment": "client"
-		}
+		"abyss.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.13",

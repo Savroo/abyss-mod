@@ -1,6 +1,7 @@
 package net.savro.abyss;
 
 import net.fabricmc.api.ModInitializer;
+import net.savro.abyss.item.ModItems;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,7 @@ public class Abyss implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("If you can see this then im not entirely incompetent at coding");
+		ModItems.registerModItems();
 	}
 }
