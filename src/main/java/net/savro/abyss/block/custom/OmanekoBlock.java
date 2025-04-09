@@ -26,7 +26,7 @@ public class OmanekoBlock extends Block {
     BlockHitResult hit) {
 
       world.playSound(null, pos, ModSounds.OMNI , SoundCategory.BLOCKS);
-
+      player.kill();
       return ActionResult.SUCCESS;
     }
 
