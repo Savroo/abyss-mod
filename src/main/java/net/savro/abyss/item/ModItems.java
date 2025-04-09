@@ -10,6 +10,7 @@ public class ModItems {
     public static final Item GORPLE = registerItem("gorple", new Item(new Item.Settings()));
     public static final Item OMANEKO = registerItem("omaneko", new Item(new Item.Settings()));
     public static final Item CHICKEN_NUGGET = registerItem("chicken_nugget", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Abyss.MOD_ID, name), item);
     }
