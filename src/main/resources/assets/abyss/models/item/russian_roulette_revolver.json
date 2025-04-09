@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "abyss:item/russian_roulette_revolver"
-    }
-}

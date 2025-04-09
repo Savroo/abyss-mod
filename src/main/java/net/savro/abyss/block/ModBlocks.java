@@ -9,6 +9,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.sound.BlockSoundGroup;
+import net.savro.abyss.block.custom.OmanekoBlock;
 
 public class ModBlocks {
 
@@ -26,7 +27,7 @@ public class ModBlocks {
 
         
     public static final Block OMANEKO_BLOCK = registerBlock("omaneko_block",
-        new Block(AbstractBlock.Settings.create()
+        new OmanekoBlock(AbstractBlock.Settings.create()
         .strength(1f)
         .sounds(BlockSoundGroup.WOOL)
         .luminance(state -> 15)
