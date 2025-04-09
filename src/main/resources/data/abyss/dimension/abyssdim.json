@@ -1,0 +1,29 @@
+{
+  "type": "abyss:abyss_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:deep_cold_ocean",
+      "lakes": false,
+      "features": false,
+      "structures": {
+        "structures": {}
+      },
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:bedrock"
+        },
+        {
+          "height": 50,
+          "block": "minecraft:stone"
+        },
+        {
+          "height": 3000,
+          "block": "minecraft:water"
+        }
+
+      ]
+    }
+  }
+}
