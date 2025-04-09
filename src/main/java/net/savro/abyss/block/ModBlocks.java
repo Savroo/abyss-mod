@@ -13,13 +13,19 @@ import net.minecraft.sound.BlockSoundGroup;
 public class ModBlocks {
 
     public static final Block GORPLE_BLOCK = registerBlock("gorple_block",
-            new Block(AbstractBlock.Settings.create()
-            .strength(4f)
-            .requiresTool()
-            .sounds(BlockSoundGroup.WOOL)
-            ));
+        new Block(AbstractBlock.Settings.create()
+        .strength(4f)
+        .sounds(BlockSoundGroup.WOOL)
+        ));
 
         
+    public static final Block OMANEKO_BLOCK = registerBlock("omaneko_block",
+        new Block(AbstractBlock.Settings.create()
+        .strength(1f)
+        .sounds(BlockSoundGroup.WOOL)
+        .luminance(state -> 15)
+        ));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

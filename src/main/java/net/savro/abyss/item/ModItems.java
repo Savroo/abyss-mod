@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item Gorple = registerItem("gorple", new Item(new Item.Settings()));
+    public static final Item Omaneko = registerItem("omaneko", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Abyss.MOD_ID, name), item);

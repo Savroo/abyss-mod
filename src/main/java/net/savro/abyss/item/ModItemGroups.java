@@ -17,7 +17,9 @@ public class ModItemGroups {
         .displayName(Text.translatable("itemGroup.abyss.test_group"))
         .entries((displayContext, entries) -> {
             entries.add(ModItems.Gorple);
+            entries.add(ModItems.Omaneko);
             entries.add(ModBlocks.GORPLE_BLOCK);
+            entries.add(ModBlocks.OMANEKO_BLOCK);
         }).build());
     
 
