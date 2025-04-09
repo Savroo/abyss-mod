@@ -13,12 +13,6 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.savro.abyss.Abyss;
-import net.minecraft.block.Blocks;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
-import net.minecraft.structure.rule.RuleTest;
-import net.minecraft.structure.rule.TagMatchRuleTest;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 import java.util.List;
 
@@ -29,8 +23,8 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, CHIMKIN_NUGGER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHIMKIN_NUGGER_KEY),
-                ModOrePlacement.modifiersWithCount(14,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(99,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-24), YOffset.fixed(64))));
 
     }
 
