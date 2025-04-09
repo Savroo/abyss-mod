@@ -34,6 +34,12 @@ public class ModBlocks {
         .luminance(state -> 15)
         ));
 
+    public static final Block FRENCH_FLAG = registerBlock("french_flag", // WHY THE FUCK IS THIS NOT WORKING ITS THE SAME AS THE OTHERS YET IT DECIDES THIS ONE IS INCORRECT WTF
+        new Block(AbstractBlock.Settings.create()
+        .strength(1.5f)
+        .sounds(BlockSoundGroup.HONEY)
+        ));
+        
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

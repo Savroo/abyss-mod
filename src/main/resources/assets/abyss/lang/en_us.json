@@ -2,12 +2,13 @@
     "item.abyss.gorple": "Gorple",
     "itemGroup.abyss.test_group": "What am I doing",
     "itemGroup.abyss.chicken_group": "Chicken Nuggets",
-
+    "itemgroup.abyss.casino_group": "Gabs Shit",
     "block.abyss.gorple_block": "Genuinely like actually what am I doing",
     "item.abyss.omaneko": "Omaneko",
     "block.abyss.omaneko_block": "Gay femboy cat",
     "block.abyss.chimkin_nugger": "Chimkin Nugger",
     "item.abyss.chicken_nugget": "Chicken Nugget",
     "item.abyss.russian_roulette_revolver": "Russian Roulette Revolver (WIP)",
-    "item.abyss.casino_chip": "Casino Chip"
+    "item.abyss.casino_chip": "Casino Chip",
+    "block.abyss.french_flag": "French Revolution"
 }

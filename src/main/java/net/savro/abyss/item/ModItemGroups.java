@@ -38,6 +38,7 @@ public class ModItemGroups {
         .displayName(Text.translatable("itemgroup.abyss.casino_group"))
         .entries((displayContext, entries) -> {
             entries.add(ModItems.CASINO_CHIP);
+            entries.add(ModBlocks.FRENCH_FLAG);
         }).build());    
     
 
