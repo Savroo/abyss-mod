@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "catagory": "building",
+    "key": {
+       "#":{
+        "item": "abyss:chicken_nugget"
+       }
+    },
+    "pattern": [
+        "##",
+        "##" 
+    ],
+    "result": {
+        "count": 1,
+        "id": "abyss:chimkin_nugger"
+    } 
+
+
+}
