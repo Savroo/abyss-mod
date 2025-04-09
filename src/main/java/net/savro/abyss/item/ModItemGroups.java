@@ -29,6 +29,7 @@ public class ModItemGroups {
         .displayName(Text.translatable("itemGroup.abyss.chicken_group"))
         .entries((displayContext, entries) -> {
             entries.add(ModBlocks.CHIMKIN_NUGGER);
+            entries.add(ModItems.CHICKEN_NUGGET);
         }).build());
         
     
