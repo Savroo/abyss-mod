@@ -18,6 +18,12 @@ public class ModBlocks {
         .sounds(BlockSoundGroup.WOOL)
         ));
 
+    public static final Block CHIMKIN_NUGGER = registerBlock("chimkin_nugger",
+        new Block(AbstractBlock.Settings.create()
+        .strength(4f)
+        .sounds(BlockSoundGroup.WOOD)
+        ));
+
         
     public static final Block OMANEKO_BLOCK = registerBlock("omaneko_block",
         new Block(AbstractBlock.Settings.create()
