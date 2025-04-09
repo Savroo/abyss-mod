@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "misc",
+  "ingredient": {
+    "item": "minecraft:cooked_chicken"
+  },
+  "result": {
+    "id": "abyss:chicken_nugget"
+  }
+}
