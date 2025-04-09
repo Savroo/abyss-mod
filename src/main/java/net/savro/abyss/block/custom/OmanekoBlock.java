@@ -10,16 +10,23 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 
+import net.savro.abyss.sound.ModSounds; // Import your custom sound event class
+
+
+
+import net.savro.abyss.Abyss;
+
 public class OmanekoBlock extends Block {
   public OmanekoBlock(Settings settings) {
     super(settings);
   }
 
   @Override
-  protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player,
+  public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player,
     BlockHitResult hit) {
 
-      world.playSound(player, pos, SoundEvents.ENTITY_CAT_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
+      world.playSound(null, pos, ModSounds.OMNI , SoundCategory.BLOCKS);
+
       return ActionResult.SUCCESS;
     }
 

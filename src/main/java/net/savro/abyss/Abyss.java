@@ -4,27 +4,27 @@ import net.fabricmc.api.ModInitializer;
 import net.savro.abyss.item.ModItems;
 import net.savro.abyss.item.ModItemGroups;
 import net.savro.abyss.block.ModBlocks;
+import net.minecraft.util.Identifier;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.Registries;
+import net.savro.abyss.sound.ModSounds;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Abyss implements ModInitializer {
-	public static final String MOD_ID = "abyss";
+    public static final String MOD_ID = "abyss";
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("If you can see this then im not entirely incompetent at coding");
-		ModItems.registerModItems();
-		ModItemGroups.registerItemGroups();
-		ModBlocks.registerModBlocks();
-	}
+    @Override
+    public void onInitialize() {
+        LOGGER.info("If you can see this then I'm not entirely incompetent at coding");
+        ModItems.registerModItems();
+        ModItemGroups.registerItemGroups();
+        ModBlocks.registerModBlocks();
+				ModSounds.registerSounds(); // Register sounds
+        // Register the custom sound event
+    }
 }
