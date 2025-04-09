@@ -32,6 +32,13 @@ public class ModItemGroups {
             entries.add(ModItems.CHICKEN_NUGGET);
         }).build());
         
+    public static final ItemGroup CASINO_GROUP = Registry.register(Registries.ITEM_GROUP,
+    Identifier.of(Abyss.MOD_ID, "casino_group"),
+    FabricItemGroup.builder().icon(() -> new ItemStack(Items.EMERALD)) 
+        .displayName(Text.translatable("itemgroup.abyss.casino_group"))
+        .entries((displayContext, entries) -> {
+            entries.add(ModItems.CASINO_CHIP);
+        }).build());    
     
 
     public static void registerItemGroups() {
