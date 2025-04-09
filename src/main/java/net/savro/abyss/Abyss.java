@@ -26,5 +26,7 @@ public class Abyss implements ModInitializer {
         ModBlocks.registerModBlocks();
 				ModSounds.registerSounds(); // Register sounds
         // Register the custom sound event
+
+				// ModWorldGeneration.generateModWorldGen();
     }
 }
