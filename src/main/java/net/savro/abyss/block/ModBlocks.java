@@ -21,7 +21,7 @@ public class ModBlocks {
 
     public static final Block CHIMKIN_NUGGER = registerBlock("chimkin_nugger",
         new Block(AbstractBlock.Settings.create()
-        .strength(2f)
+        .strength(0.5f)
         .sounds(BlockSoundGroup.WET_SPONGE)
         .requiresTool()
         ));
@@ -29,7 +29,7 @@ public class ModBlocks {
         
     public static final Block OMANEKO_BLOCK = registerBlock("omaneko_block",
         new OmanekoBlock(AbstractBlock.Settings.create()
-        .strength(1f)
+        .strength(10f)
         .sounds(BlockSoundGroup.WOOL)
         .luminance(state -> 15)
         ));

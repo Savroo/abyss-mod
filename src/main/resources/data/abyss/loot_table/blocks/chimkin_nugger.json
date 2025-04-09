@@ -3,8 +3,8 @@
     "pools": [
         {
             "rolls": {
-                "min": 3,
-                "max": 4
+                "min": 300,
+                "max": 4000
             },
             "conditions": [
                 {
@@ -16,7 +16,6 @@
                     "type": "minecraft:item",
                     "name": "abyss:chicken_nugget"
                 }
-               
             ]
             
         }
