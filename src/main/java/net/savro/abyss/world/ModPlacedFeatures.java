@@ -1,5 +1,6 @@
 package net.savro.abyss.world;
 
+import net.savro.abyss.Abyss;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -12,20 +13,19 @@ import net.minecraft.world.gen.feature.FeatureConfig;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.savro.abyss.Abyss;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> CHIMKIN_NUGGER_PLACED_KEY = registerKey("chimkin_nugger_placed");
+    public static final RegistryKey<PlacedFeature> CHIMKIN_NUGGER_PLACED_KEY = registerKey("pink_garnet_ore_placed");
+
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, CHIMKIN_NUGGER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHIMKIN_NUGGER_KEY),
                 ModOrePlacement.modifiersWithCount(99,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-24), YOffset.fixed(64))));
-
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

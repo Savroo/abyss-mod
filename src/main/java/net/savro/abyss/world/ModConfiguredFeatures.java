@@ -22,11 +22,11 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-         List<OreFeatureConfig.Target> overworldChimkinNugger =
+         List<OreFeatureConfig.Target> Chimkin_Nugger =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.CHIMKIN_NUGGER.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.CHIMKIN_NUGGER.getDefaultState()));
 
-        register(context, CHIMKIN_NUGGER_KEY, Feature.ORE, new OreFeatureConfig(overworldChimkinNugger, 12));
+        register(context, CHIMKIN_NUGGER_KEY, Feature.ORE, new OreFeatureConfig(Chimkin_Nugger, 12));
 
 
     }

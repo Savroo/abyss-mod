@@ -4,10 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import net.savro.abyss.item.ModItems;
 import net.savro.abyss.item.ModItemGroups;
 import net.savro.abyss.block.ModBlocks;
-import net.minecraft.util.Identifier;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.Registries;
 import net.savro.abyss.sound.ModSounds;
 
 import org.slf4j.Logger;
